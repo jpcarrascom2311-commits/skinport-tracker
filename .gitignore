@@ -1,0 +1,18 @@
+# Datos históricos (no versionar)
+skinport_history.csv
+
+# Logs y basura
+scheduler_runs.log
+cookies.txt
+page.png
+pip.txt
+
+# Python
+__pycache__/
+*.pyc
+
+# Scripts de prueba / temporales
+fetch_stickers.py
+prueba.py
+bat.bat
+crack_de_contraseña.py
