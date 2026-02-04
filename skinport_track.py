@@ -315,22 +315,31 @@ def git_sync_or_exit():
 
     return True
 
-def git_commit_push():
-    # agrega solo lo que quiere versionar (incluya history porque ahora lo necesita)
-    run_git(["add", "skinport_history.csv", "skinport_latest.csv", "skinport_best.csv", "skinport_track.py", "run_tracker.bat"])
+import subprocess
 
-    diff = run_git(["diff", "--cached", "--name-only"])
-    if not diff.stdout.strip():
-        print("INFO: no hay cambios para commit.")
+GIT_EXE = r"C:\Program Files\Git\cmd\git.exe"  # ajuste si su Git está en otra ruta
+
+def run_git(args):
+    p = subprocess.run([GIT_EXE, *args], cwd=str(HERE), capture_output=True, text=True)
+    if p.returncode != 0:
+        raise RuntimeError(f"git {' '.join(args)} falló:\n{p.stderr}")
+    return p
+
+def git_commit_push():
+    # Agregar archivos que quiere versionar
+    run_git(["add", "skinport_latest.csv", "skinport_best.csv", "skinport_track.py"])
+
+    staged = run_git(["diff", "--cached", "--name-only"]).stdout.strip()
+    if not staged:
+        print("INFO: no hay cambios staged para commit.")
         return
 
+    print("DEBUG: staged:\n" + staged)
+
     run_git(["commit", "-m", "update prices"])
-    push = run_git(["push", "origin", "main"])
-    if push.returncode != 0:
-        print("WARN: git push falló.")
-        print(push.stderr[:400])
-    else:
-        print("OK: git push exitoso")
+    run_git(["push", "origin", "main"])
+    print("OK: git push exitoso")
+
 
 def git_sync_or_exit():
     # si hay cambios, los guardamos temporalmente
