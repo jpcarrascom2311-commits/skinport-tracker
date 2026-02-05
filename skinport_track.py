@@ -322,7 +322,8 @@ def run_git(args):
 
 def git_commit_push():
     # Agregar archivos que quiere versionar
-    run_git(["add", "skinport_latest.csv", "skinport_best.csv", "skinport_track.py"])
+    run_git(["add", "skinport_latest.csv", "skinport_best.csv", "skinport_best_sheets.csv", "skinport_track.py"])
+
 
     staged = run_git(["diff", "--cached", "--name-only"]).stdout.strip()
     if not staged:
