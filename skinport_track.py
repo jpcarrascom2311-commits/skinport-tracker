@@ -23,7 +23,7 @@ COST_BASIS = {
     "MP9 | Latte Rush (Field-Tested)": 33.69,
     "★ Paracord Knife | Slaughter (Factory New)": 159.64,
     "Special Agent Ava | FBI": 22.17,
-    "StatTrak™ AK-47 | Nightwish (Minimal Wear)": 55.40,
+    "StatTrak™ AK-47 | Nightwish (Minimal Wear)": 70.15,
     "StatTrak™ AWP | Fever Dream (Minimal Wear)": 25.70,
     "StatTrak™ SG 553 | Darkwing (Minimal Wear)": 1.92,
     "Tec-9 | Jambiya (Minimal Wear)": 0.86,
