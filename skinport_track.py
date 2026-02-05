@@ -285,7 +285,14 @@ def build_best_csv(HISTORY_CSV, BEST_CSV, max_rows_per_item: int = 60):
     out = out.sort_values(["has_best", "distance_to_cost", "market_hash_name"], ascending=[False, True, True])
     out = out.drop(columns=["has_best"])
 
-    out.to_csv(BEST_CSV, index=False, encoding="utf-8")
+    out.to_csv(
+        BEST_CSV,
+        index=False,
+        encoding="utf-8-sig",
+        sep=";",
+        decimal=","
+    )
+
     print(f"OK: best -> {BEST_CSV} (field={BEST_FIELD}) filas={len(out)}")
 
 
