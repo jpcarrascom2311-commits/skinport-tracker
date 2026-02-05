@@ -287,13 +287,13 @@ def build_best_csv(HISTORY_CSV, BEST_CSV, max_rows_per_item: int = 60):
     )
     out = out.drop(columns=["has_best"])
 
-    out.to_csv(
-        BEST_CSV,
-        index=False,
-        encoding="utf-8-sig",
-        sep=";",
-        decimal=","
-    )
+    out_sheets = out.copy()
+    out_sheets["market_hash_name"] = out_sheets["market_hash_name"].astype(str).str.replace("★", "", regex=False).str.replace("™", "", regex=False).str.strip()
+    out_sheets = out_sheets.drop(columns=["last_timestamp"])
+
+    SHEETS_CSV = HERE / "skinport_best_sheets.csv"
+    out_sheets.to_csv(SHEETS_CSV, index=False, encoding="utf-8", sep=",", float_format="%.2f")
+
 
     print(f"OK: best -> {BEST_CSV} (field={BEST_FIELD}) filas={len(out)}")
 
