@@ -300,20 +300,6 @@ GIT_EXE = r"C:\Program Files\Git\cmd\git.exe"  # ajuste si Git está en otra rut
 def run_git(args):
     return subprocess.run([GIT_EXE, *args], cwd=HERE, capture_output=True, text=True)
 
-def git_sync_or_exit():
-    fetch = run_git(["fetch", "origin"])
-    if fetch.returncode != 0:
-        print("WARN: git fetch falló.")
-        print(fetch.stderr[:400])
-        return False
-
-    pull = run_git(["pull", "--rebase", "origin", "main"])
-    if pull.returncode != 0:
-        print("WARN: git pull --rebase falló. No se hará commit/push.")
-        print(pull.stderr[:400])
-        return False
-
-    return True
 
 import subprocess
 
@@ -341,32 +327,6 @@ def git_commit_push():
     print("OK: git push exitoso")
 
 
-def git_sync_or_exit():
-    # si hay cambios, los guardamos temporalmente
-    dirty = run_git(["status", "--porcelain"])
-    had_changes = bool(dirty.stdout.strip())
-
-    if had_changes:
-        st = run_git(["stash", "push", "-u", "-m", "auto-stash before rebase"])
-        if st.returncode != 0:
-            print("WARN: git stash falló.")
-            print(st.stderr[:400])
-            return False
-
-    pull = run_git(["pull", "--rebase", "origin", "main"])
-    if pull.returncode != 0:
-        print("WARN: git pull --rebase falló. No se hará commit/push.")
-        print(pull.stderr[:400])
-        return False
-
-    if had_changes:
-        pop = run_git(["stash", "pop"])
-        if pop.returncode != 0:
-            print("WARN: stash pop falló (puede haber conflictos).")
-            print(pop.stderr[:400])
-            return False
-
-    return True
 
 
 def main():
@@ -387,9 +347,6 @@ def main():
 
 
 if __name__ == "__main__":
-    if not git_sync_or_exit():
-        raise SystemExit(1)
-
     main()  # aquí recién se crean/modifican CSV
 
     build_best_csv(HISTORY_CSV, BEST_CSV, max_rows_per_item=60)
