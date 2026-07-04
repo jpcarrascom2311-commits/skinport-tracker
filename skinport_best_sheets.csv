@@ -1,5 +1,5 @@
 market_hash_name,cost_basis,best_field,best_value,distance_to_cost,last_value,method,n_samples
-AUG | Death by Puppy (Minimal Wear),5.74,median_7d,5.74,0.00,,closest_to_cost_median_7d_iqr,56
+AUG | Death by Puppy (Minimal Wear),5.74,median_7d,5.74,0.00,,closest_to_cost_median_7d_iqr,55
 Special Agent Ava | FBI,22.17,median_7d,22.16,0.01,22.05,closest_to_cost_median_7d_iqr,60
 Broken Fang Gloves | Needle Point (Well-Worn),64.05,median_7d,64.08,0.03,49.37,closest_to_cost_median_7d_iqr,60
 M4A4 | Temukau (Field-Tested),34.84,median_7d,34.80,0.04,34.26,closest_to_cost_median_7d_iqr,60
