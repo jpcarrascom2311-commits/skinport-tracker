@@ -2,11 +2,11 @@ market_hash_name,cost_basis,best_field,best_value,distance_to_cost,last_value,me
 StatTrak AWP | Fever Dream (Minimal Wear),25.70,median_7d,25.70,0.00,21.49,closest_to_cost_median_7d_iqr,59
 StatTrak SG 553 | Darkwing (Minimal Wear),1.92,median_7d,1.95,0.03,2.02,closest_to_cost_median_7d_iqr,60
 StatTrak AK-47 | Nightwish (Minimal Wear),70.15,median_7d,70.20,0.05,65.36,closest_to_cost_median_7d_iqr,60
-Special Agent Ava | FBI,22.17,median_7d,22.01,0.16,16.14,closest_to_cost_median_7d_iqr,60
 Tec-9 | Jambiya (Minimal Wear),0.86,median_7d,1.02,0.16,1.20,closest_to_cost_median_7d_iqr,53
 M4A4 | Temukau (Field-Tested),34.84,median_7d,34.57,0.27,28.51,closest_to_cost_median_7d_iqr,60
-The Elite Mr. Muhlik | Elite Crew,12.86,median_7d,12.45,0.41,9.02,closest_to_cost_median_7d_iqr,60
+Special Agent Ava | FBI,22.17,median_7d,21.85,0.32,16.14,closest_to_cost_median_7d_iqr,60
 XM1014 | Run Run Run (Factory New),3.85,median_7d,3.38,0.47,1.79,closest_to_cost_median_7d_iqr,52
+The Elite Mr. Muhlik | Elite Crew,12.86,median_7d,12.37,0.49,9.02,closest_to_cost_median_7d_iqr,60
 Galil AR | Chromatic Aberration (Minimal Wear),8.08,median_7d,7.58,0.50,6.46,closest_to_cost_median_7d_iqr,60
 AUG | Death by Puppy (Minimal Wear),5.74,median_7d,5.19,0.55,4.08,closest_to_cost_median_7d_iqr,56
 MP7 | Smoking Kills (Minimal Wear),15.34,median_7d,14.63,0.71,12.18,closest_to_cost_median_7d_iqr,60
