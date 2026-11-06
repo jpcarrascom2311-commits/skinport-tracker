@@ -1,16 +1,16 @@
 market_hash_name,cost_basis,best_field,best_value,distance_to_cost,last_value,method,n_samples
-StatTrak AWP | Fever Dream (Minimal Wear),25.70,median_7d,25.70,0.00,22.33,closest_to_cost_median_7d_iqr,54
-StatTrak SG 553 | Darkwing (Minimal Wear),1.92,median_7d,1.90,0.02,2.07,closest_to_cost_median_7d_iqr,60
-Tec-9 | Jambiya (Minimal Wear),0.86,median_7d,0.99,0.13,1.12,closest_to_cost_median_7d_iqr,55
-StatTrak AK-47 | Nightwish (Minimal Wear),70.15,median_7d,69.78,0.37,59.88,closest_to_cost_median_7d_iqr,60
-Galil AR | Chromatic Aberration (Minimal Wear),8.08,median_7d,7.42,0.66,7.03,closest_to_cost_median_7d_iqr,60
-AUG | Death by Puppy (Minimal Wear),5.74,median_7d,4.98,0.76,3.64,closest_to_cost_median_7d_iqr,59
-MP7 | Smoking Kills (Minimal Wear),15.34,median_7d,13.91,1.43,10.21,closest_to_cost_median_7d_iqr,60
+StatTrak AWP | Fever Dream (Minimal Wear),25.70,median_7d,25.70,0.00,22.36,closest_to_cost_median_7d_iqr,54
+StatTrak SG 553 | Darkwing (Minimal Wear),1.92,median_7d,1.90,0.02,2.09,closest_to_cost_median_7d_iqr,60
+Tec-9 | Jambiya (Minimal Wear),0.86,median_7d,0.99,0.13,1.32,closest_to_cost_median_7d_iqr,55
+StatTrak AK-47 | Nightwish (Minimal Wear),70.15,median_7d,69.78,0.37,60.46,closest_to_cost_median_7d_iqr,60
+Galil AR | Chromatic Aberration (Minimal Wear),8.08,median_7d,7.38,0.70,6.62,closest_to_cost_median_7d_iqr,60
+AUG | Death by Puppy (Minimal Wear),5.74,median_7d,4.98,0.76,3.76,closest_to_cost_median_7d_iqr,59
 XM1014 | Run Run Run (Factory New),3.85,median_7d,2.40,1.45,1.97,closest_to_cost_median_7d_iqr,60
-M4A4 | Temukau (Field-Tested),34.84,median_7d,32.81,2.03,27.34,closest_to_cost_median_7d_iqr,60
-The Elite Mr. Muhlik | Elite Crew,12.86,median_7d,10.59,2.27,8.16,closest_to_cost_median_7d_iqr,60
-Special Agent Ava | FBI,22.17,median_7d,19.76,2.41,16.50,closest_to_cost_median_7d_iqr,60
-Desert Eagle | Kumicho Dragon (Minimal Wear),31.75,median_7d,29.07,2.68,24.12,closest_to_cost_median_7d_iqr,60
-Broken Fang Gloves | Needle Point (Well-Worn),64.05,median_7d,47.60,16.45,41.84,closest_to_cost_median_7d_iqr,39
-MP9 | Latte Rush (Field-Tested),33.69,median_7d,12.37,21.32,8.66,closest_to_cost_median_7d_iqr,60
-Paracord Knife | Slaughter (Factory New),159.64,median_7d,133.63,26.01,131.51,closest_to_cost_median_7d_iqr,60
+MP7 | Smoking Kills (Minimal Wear),15.34,median_7d,13.42,1.92,10.92,closest_to_cost_median_7d_iqr,60
+M4A4 | Temukau (Field-Tested),34.84,median_7d,32.81,2.03,27.02,closest_to_cost_median_7d_iqr,60
+Special Agent Ava | FBI,22.17,median_7d,19.76,2.41,16.31,closest_to_cost_median_7d_iqr,60
+The Elite Mr. Muhlik | Elite Crew,12.86,median_7d,10.33,2.53,8.17,closest_to_cost_median_7d_iqr,60
+Desert Eagle | Kumicho Dragon (Minimal Wear),31.75,median_7d,29.07,2.68,23.91,closest_to_cost_median_7d_iqr,60
+Broken Fang Gloves | Needle Point (Well-Worn),64.05,median_7d,47.60,16.45,41.89,closest_to_cost_median_7d_iqr,40
+MP9 | Latte Rush (Field-Tested),33.69,median_7d,12.37,21.32,8.68,closest_to_cost_median_7d_iqr,60
+Paracord Knife | Slaughter (Factory New),159.64,median_7d,133.63,26.01,131.69,closest_to_cost_median_7d_iqr,60
